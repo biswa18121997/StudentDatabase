@@ -1,0 +1,42 @@
+body{
+    background-image: url("building-education-florida-photos.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color:wheat ;
+    
+    
+}
+#nav2{
+    button{
+        padding: 3px;
+        border-radius: 10px;
+        border: 2px solid blue;
+        font-size: larger;
+        background:linear-gradient(cyan,gray,lightblue,orange);
+        font-weight: bolder;
+        
+    }
+    
+    
+}
+#nav2 button:hover{
+    
+    scale: 125%;
+    transition-duration: 700ms;
+    text-decoration: underline;
+}
+label{
+    color: white;
+    text-align: center;
+    background-color: rgb(92, 91, 91);
+    padding: 4px;
+    border-radius: 10px;
+    
+}
+input{
+    text-align: center;
+    height: 100%;
+}
+section{
+    box-shadow: 10px 10px 5px 5px black;
+}

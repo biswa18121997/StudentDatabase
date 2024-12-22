@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Reg_Sys_Tailwind_Output.css">
+    <link rel="stylesheet" href="additional.css">
+</head>
+<body class="">
+    <nav class="sticky top-0 m-3 flex justify-around bg-slate-300 opacity-80 h-[15vh]">
+        <section class="bg-orange-200 opacity-100 flex justify-center items-center w-1/5 p-4 border rounded-full ">
+            <img src="35b1f31461c3a83ab53c5ee465fae2ce.jpg" alt="" class="w-1/2 rounded-full">
+            <h1><span class="text-red-700 font-semibold text-5xl font-mono">INDIAN</span><br><span class="text-blue-700 font-semibold text-3xl">High</span><span class="font-semibold text-3xl text-gray-500"> School</span></h1>
+        </section>
+        <section id="nav2" class="flex justify-between items-center">
+            <button class="m-4">About</button>
+            <button class="m-4">School Curriculum</button>
+            <button class="m-4">Gallery</button>
+            <button class="m-4">Student Registration</button>
+            <a href="studentDB.html" target="_blank"><button class="m-4">Access STUDENT's DATABASE</button></a>
+        </section>
+    </nav><br>
+    <br><br><hr>
+
+    <p class="p-3 m-3 w-3/4 bg-gray-400 rounded-2xl   text-blue-700 font-semibold">
+        Welcome..! to our school website. This is a School website that
+        acts as a database for records of all students data..
+        if You are a new student then register here using <span class=" bg-white text-red-900 rounded-md border-1 p-1 underline shadow-lg inset-5 shadow-black">FORM-1</span>.
+        Else if You are already a student of our school You can update or delete 
+        your data using <span class=" bg-white text-red-900 rounded-md border-1 p-1 underline shadow-lg inset-5 shadow-black">FORM-2 & FORM-3..</span>
+    </p>
+
+
+    <section class="bg-gray-400 bg-opacity-50 m-8">
+        <h1 class="text-center bg-gray-600 opacit h-1/6 font-mono text-5xl text-white underline underline-offset-8">Student Registration, Updation & Deletion System </h1>
+        <section class="flex justify-evenly">
+            <section class="w-1/3 h-[100vh] border-4 rounded-3xl m-3 ">
+                <h2 class="text-centre font-extrabold p-4 m-4 rounded-t-3xl bg-blue-500 text-2xl"><span class="text-red-950 underline"> FORM-1: </span>Student's Registration Form:</h2>
+                <form action="" class="shadow-inner border-2 flex-col m-3 p-3 bg-opacity-60 bg-gray-600 w-full">
+                    <label for="sid">Enter Student ID:</label>
+                    <input type="text" id="sid" class=" m-3 rounded-md w-4/5" placeholder="Please Enter Student ID.."><br>
+                    <label for="name">Enter Full Name of Student: </label>
+                    <input type="text" id="name" class="m-3 rounded-md w-4/5" placeholder="Please Enter Student Name.."><br>
+                    <label for="mail">Enter E-Mail Address:</label>
+                    <input type="email" id="mail" class="m-3 rounded-md w-4/5" placeholder="Please Enter E-Mail Address of Student."><br>
+                    <label for="contact">Enter Student's Contact Number:</label>
+                    <input type="number" id="contact" class="m-3 rounded-md w-4/5" placeholder="Please Enter Student's Contact Number.."><br>
+                    <label for="dp">Please Choose A Photo of Student</label>
+                    <input type="file" name="dp" id="dp" class="m-3 border-2 rounded-md w-4/5" placeholder="Please Choose A Photo of Student">
+                    <button id="add" class="hover:bg-green-800 hover:underline active:bg-red-500 border-3 font-bold bg-blue-900 text-white p-3 rounded-2xl">SUBMIT / REGISTER..</button>
+                </form>
+            </section>
+
+
+            <section class="w-1/3 h-[100vh] border-4 rounded-3xl m-3 ">
+                <h2 class="text-centre font-extrabold p-4 m-4 rounded-t-3xl bg-blue-500 text-2xl"><span class="text-red-950 underline"> FORM-2: </span>Student's Records Deletion Form:</h2>
+                <form action="" class="shadow-inner border-2 flex-col m-3 p-3 bg-opacity-60 bg-gray-600 w-full">
+                    <label for="delsid">Enter Student ID:</label>
+                    <input type="text" id="delsid" class=" m-3 rounded-md w-4/5" placeholder="Please Enter Student ID.."><br>
+                    <label for="delname">Enter Full Name of Student: </label>
+                    <input type="text" id="delname" class="m-3 rounded-md w-4/5" placeholder="Please Enter Student Name.."><br>
+                    <button id="del" class="hover:bg-green-800 hover:underline active:bg-red-500 border-3 font-bold bg-blue-900 text-white p-3 rounded-2xl">SUBMIT / REQUEST DELETION..</button>
+                </form>
+            </section>
+            
+
+            <section class="w-1/3 h-[100vh] border-4 rounded-3xl m-3 ">
+                <h2 class="text-centre font-extrabold p-4 m-4 rounded-t-3xl bg-blue-500 text-2xl "><span class="text-red-950 underline"> FORM-3:</span> Student's Records Update Form</h2>
+                <form action="" class="shadow-inner border-2 flex-col m-3 p-3 bg-opacity-60 bg-gray-600 w-full">
+                    <label for="updsid">Enter Student ID:</label>
+                    <input type="text" id="updsid" class=" m-3 rounded-md w-4/5" placeholder="Please Enter Student ID.."><br>
+                    <label for="updname">Enter Full Name of Student: </label>
+                    <input type="text" id="updname" class="m-3 rounded-md w-4/5" placeholder="Please Enter Student Name.."><br>
+                   <button id="upd" class="hover:bg-green-800 hover:underline active:bg-red-500 border-3 font-bold bg-blue-900 text-white p-3 rounded-2xl">SUBMIT / REQUEST UPDATION.</button>
+                </form>
+            </section>
+        </section>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
