@@ -47,6 +47,10 @@ section{
 #studentCard{
     background-color: wheat;
     opacity: 100;
+    border: 2px solid double;
+    overflow: scroll;
+    
+
 
     
 }

@@ -19,15 +19,15 @@ function renderDatabase() {
     studentDatabase.forEach((student, index) => {
         const studentCard = document.createElement('div');
         studentCard.id= 'studentCard';
-        studentCard.className = 'm-4 p-4 bg-opacity-100 rounded-xl shadow-lg';
+        studentCard.className = 'm-4 p-4 border-2 border-black bg-opacity-100 rounded-xl shadow-lg';
         studentCard.innerHTML = `
             <h3 class="text-xl font-bold text-gray-800">${student.name}</h3>
             <p><strong>ID:</strong> ${student.id}</p>
             <p><strong>Email:</strong> ${student.email}</p>
             <p><strong>Contact:</strong> ${student.contact}</p>
             <p><strong>Roll:</strong> ${student.roll}</p>
-            <button onclick="editStudent(${index})" class="bg-blue-500 text-white p-2 rounded mt-2">Edit</button>
-            <button onclick="deleteStudent(${index})" class="bg-red-500 text-white p-2 rounded mt-2">Delete</button>
+            <button  onclick="editStudent(${index})" class="bg-green-700 hover:bg-blue-600 hover:underline hover:border-2 border-black text-white p-2 rounded mt-2">Edit</button>
+            <button onclick="deleteStudent(${index})" class="bg-red-500  hover:bg-red-900 hover:underline hover:border-2 border-black text-white p-2 rounded mt-2">Delete</button>
         `;
         databaseSection.appendChild(studentCard);
     });
