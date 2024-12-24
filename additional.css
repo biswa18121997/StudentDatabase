@@ -41,11 +41,12 @@ input{
     height: 100%;
 }
 section{
-    box-shadow: 10px 10px 5px 5px black;
+    box-shadow: 7px 10px 5px 5px black;
 }
-#db{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 5px;
+
+#studentCard{
+    background-color: wheat;
+    opacity: 100;
+
+    
 }
